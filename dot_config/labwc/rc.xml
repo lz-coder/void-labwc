@@ -1,0 +1,116 @@
+<?xml version="1.0" ?>
+<labwc_config>
+
+  <core>
+    <decoration>server</decoration>
+    <gap>0</gap>
+    <adaptiveSync>no</adaptiveSync>
+    <cycleViewPreview>yes</cycleViewPreview>
+    <cycleViewOutlines>yes</cycleViewOutlines>
+  </core>
+
+  <theme>
+    <name>lzshell</name>
+  </theme>
+
+  <desktops>
+    <popupTime>1000</popupTime>
+    <names>
+      <name>Workspace 1</name>
+      <name>Workspace 2</name>
+      <name>Workspace 3</name>
+      <name>Workspace 4</name>
+    </names>
+  </desktops>
+
+  <keyboard>
+    <default />
+    <keybind key="W-d">
+      <action name="Execute" command="/home/lzcoder/.config/labwc/scripts/launcher.sh drun" />
+    </keybind>
+    <keybind key="W-r">
+      <action name="Execute" command="/home/lzcoder/.config/labwc/scripts/launcher.sh run" />
+    </keybind>
+    <keybind key="W-w">
+      <action name="Execute" command="/home/lzcoder/.config/labwc/scripts/launcher.sh window" />
+    </keybind>
+
+    <keybind key="W-Return"><action name="Execute" command="foot" /></keybind>
+    <keybind key="W-S-c"><action name="Reconfigure" /></keybind>
+    <keybind key="C-A-Delete"><action name="Execute" command="sh -c 'killall wlogout || wlogout'" /></keybind>
+    <keybind key="W-e"><action name="Execute" command="nemo" /></keybind>
+    <keybind key="W-S-e"><action name="Execute" command="foot ranger" /></keybind>
+    <keybind key="W-f"><action name="ToggleFullscreen" /></keybind>
+    <keybind key="W-h"><action name="Iconify" /></keybind>
+    <keybind key="W-j"><action name="Raise" /></keybind>
+    
+    <!-- Control Audio Volume -->
+    <keybind key="XF86_AudioRaiseVolume">
+      <action name="Execute" command="pactl set-sink-volume @DEFAULT_SINK@ +5%" />
+      </keybind>
+    <keybind key="XF86_AudioLowerVolume">
+      <action name="Execute" command="pactl set-sink-volume @DEFAULT_SINK@ -5%" />
+      </keybind>
+    <keybind key="XF86_AudioMute">
+      <action name="Execute" command="pactl set-sink-mute @DEFAULT_SINK@ toggle" />
+    </keybind>
+    
+    <!-- Color picker -->
+    <keybind key="W-S-p">
+      <action name="Execute" command="/home/lzcoder/.config/labwc/scripts/color-picker.sh" />
+    </keybind>
+    
+    <!-- Screenshot -->
+    <keybind key="Print">
+      <action name="Execute" command="grimshot --notify save" />
+    </keybind>
+    <keybind key="S-Print">
+      <action name="Execute" command="grimshot --notify save area" />
+    </keybind>
+    <keybind key="W-Print">
+      <action name="Execute" command="grimshot --notify save active" />
+    </keybind>
+
+    <!-- Move to workspaces -->
+    <keybind key="C-A-Left">
+      <action name="GoToDesktop" to="left" />
+    </keybind>
+    <keybind key="C-A-Right">
+      <action name="GoToDesktop" to="right" />
+    </keybind>
+
+    <keybind key="W-1">
+      <action name="GoToDesktop" to="1" />
+    </keybind>
+    <keybind key="W-2">
+      <action name="GoToDesktop" to="2" />
+    </keybind>
+    <keybind key="W-3">
+      <action name="GoToDesktop" to="3" />
+    </keybind>
+    <keybind key="W-4">
+      <action name="GoToDesktop" to="4" />
+    </keybind>
+
+    <!-- Move window to Workspace -->
+    <keybind key="C-W-Left">
+      <action name="SendToDesktop" to="left" />
+    </keybind>
+    <keybind key="C-W-Right">
+      <action name="SendToDesktop" to="right" />
+    </keybind>
+
+    <!-- Move window and go to workspace -->
+    <keybind key="C-W-A-Left">
+      <action name="SendToDesktop" to="left" />
+      <action name="GoToDesktop" to="left" />
+    </keybind>
+    <keybind key="C-W-A-Right">
+      <action name="SendToDesktop" to="right" />
+      <action name="GoToDesktop" to="right" />
+    </keybind>
+  </keyboard>
+
+</labwc_config>
+
+

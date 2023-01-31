@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu>
+<menu id="root-menu">
+  <item label="Web browser">
+    <action name="Execute"><command>firefox</command></action>
+  </item>
+  <item label="Terminal">
+    <action name="Execute"><command>foot</command></action>
+  </item>
+  <item label="Neovim">
+    <action name="Execute"><command>foot sh -c nvim</command></action>
+  </item>
+  <item label="GUI File Manager">
+    <action name="Execute"><command>nemo</command></action>
+  </item>
+  <item label="CLI File Manager">
+    <action name="Execute"><command>ranger</command></action>
+  </item>
+  <separator />
+  <item label="Reconfigure">
+    <action name="Reconfigure"></action>
+  </item>
+  <item label="Exit">
+    <action name="Execute"><command>wlogout</command></action>
+  </item>
+</menu>
+
+</openbox_menu>
