@@ -1,4 +1,4 @@
-swaybg -i '/home/lzcoder/Images/blonde-car-gun-sexy.jpg' > /dev/null 2>&1 &
+swaybg -i '/home/lzcoder/Images/wall01.jpg' > /dev/null 2>&1 &
 waybar > /dev/null 2>&1 &
 pipewire > /dev/null 2>&1 &
 pipewire-pulse > /dev/null 2>&1 &
