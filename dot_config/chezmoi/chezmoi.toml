@@ -3,5 +3,5 @@
     args = ["-d", "{{ .Destination }}", "{{ .Source }}", "{{ .Target }}"]
 
 [git]
-    autoCommit = true
+    autoCommit = false
     autoPush = true
