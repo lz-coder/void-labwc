@@ -35,7 +35,7 @@
     // },
     "wlr/taskbar": {
         "format": "{icon}{title:.15}",
-        "icon-size": 22,
+        "icon-size": 20,
         "tooltip-format": "{title}",
         "on-click": "minimize-raise",
         "on-click-middle": "close",
