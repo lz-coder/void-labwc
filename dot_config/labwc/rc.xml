@@ -26,10 +26,10 @@
   <keyboard>
     <default />
     <keybind key="W-d">
-      <action name="Execute" command="bemenu-launcher.sh drun" />
+      <action name="Execute" command="~/.config/labwc/scripts/bemenu-launcher.sh drun" />
     </keybind>
     <keybind key="W-r">
-      <action name="Execute" command="bemenu-launcher.sh run" />
+      <action name="Execute" command="~/.config/labwc/scripts/bemenu-launcher.sh run" />
     </keybind>
     <keybind key="W-w">
       <action name="Execute" command="/home/lzcoder/.config/labwc/scripts/launcher.sh window" />

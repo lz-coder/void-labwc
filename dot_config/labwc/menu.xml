@@ -12,7 +12,7 @@
     <action name="Execute"><command>foot sh -c nvim</command></action>
   </item>
   <item label="GUI File Manager">
-    <action name="Execute"><command>nemo</command></action>
+    <action name="Execute"><command>qtfm</command></action>
   </item>
   <item label="CLI File Manager">
     <action name="Execute"><command>ranger</command></action>
